@@ -210,7 +210,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <button onClick={() => scrollToSection('home')} className="text-xl font-semibold hover:opacity-80 transition-opacity cursor-pointer">
-              Anuraag Akella
+              <img src="/Logo.png" alt="Logo" className="w-25 h-25 inline-block mt-2" />
             </button>
             <div className="hidden md:flex items-center gap-8">
               {['about', 'experience', 'projects', 'skills', 'contact'].map((item) => (
