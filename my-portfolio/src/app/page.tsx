@@ -26,7 +26,9 @@ export default function Home() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
+  const openResume = () => {
+    window.open('/AnuraagAkella_Resume.pdf', '_blank');
+  };
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: 'smooth' });
@@ -199,7 +201,7 @@ export default function Home() {
 
       {/* Animated Background Gradient */}
       <div className="fixed inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-orange-500/10 animate-gradient"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-orange-500/10 animate-gradient"></div>
         <div className="absolute inset-0 grid-background"></div>
       </div>
 
@@ -235,7 +237,7 @@ export default function Home() {
             ✨ Looking for opportunities
           </div>
           
-          <h1 className="text-6xl sm:text-8xl lg:text-9xl font-bold mb-6 tracking-tight animate-fade-in-up text-glow">
+          <h1 className="text-6xl sm:text-8xl lg:text-9xl font-bold mb-6 tracking-tight animate-fade-in-up">
             Anuraag Akella
           </h1>
           
@@ -251,11 +253,11 @@ export default function Home() {
           </p>
           
           <div className="flex gap-4 justify-center flex-wrap animate-fade-in-up delay-300">
-            <button onClick={() => scrollToSection('projects')} className="px-8 py-4 bg-white cursor-pointer text-black rounded-lg font-medium hover:bg-gray-200 transition-all transform hover:scale-105 hover:shadow-xl">
+            <button onClick={() => scrollToSection('projects')} className="px-8 py-4 cursor-pointer bg-white/5 border border-white/20 rounded-lg font-medium hover:bg-white/10 transition-all transform hover:scale-105">
               View Work
             </button>
-            <button onClick={() => scrollToSection('contact')} className="px-8 py-4 cursor-pointer bg-white/5 border border-white/20 rounded-lg font-medium hover:bg-white/10 transition-all transform hover:scale-105">
-              Get in Touch
+            <button onClick={() => openResume()} className="px-8 text-black py-4 cursor-pointer bg-white/100 border border-white/20 rounded-lg font-medium hover:bg-white/100 transition-all transform hover:scale-105">
+              View Resume
             </button>
           </div>
           
@@ -277,6 +279,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
 
       {/* About Section */}
       <section id="about" className="relative py-32 px-6 lg:px-8 border-t border-white/10">
