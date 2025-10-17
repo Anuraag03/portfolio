@@ -62,7 +62,7 @@ export default function Home() {
       'Designed optimized MongoDB (Mongoose) schemas for users, teams, and matches',
       'Used React with Tailwind CSS for an interactive and dynamic UI experience'
     ],
-    link: 'https://github.com/Anuraag03',
+    link: 'https://github.com/Anuraag03/sportUp',
     date: 'Jun 2025'
   },
   {
