@@ -368,8 +368,8 @@ export default function Home() {
               <div key={index} className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] transition-all backdrop-blur-sm glow-effect transform hover:translate-x-2">
                 <div className="flex flex-col sm:flex-row sm:justify-between gap-4 mb-6">
                   <div>
-                    <h3 className="text-2xl font-bold mb-2">{exp.role}</h3>
-                    <p className="text-lg text-white">{exp.company}</p>
+                    <h3 className="text-2xl font-bold mb-2">{exp.company}</h3>
+                    <p className="text-lg text-white">{exp.role}</p>
                   </div>
                   <div className="text-gray-400 sm:text-right">
                     <div>{exp.period}</div>
