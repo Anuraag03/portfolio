@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Anuraag Akella",
   description: "Portfolio of Anuraag Akella",
+  icons: {
+    icon: "/logo.png", // Path relative to the 'public' folder
+  },
 };
 
 export default function RootLayout({
