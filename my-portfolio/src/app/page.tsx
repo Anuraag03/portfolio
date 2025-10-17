@@ -243,6 +243,7 @@ export default function Home() {
             <p className="text-2xl sm:text-3xl lg:text-4xl text-gray-300 mb-2 animate-fade-in-up delay-100">
               Software Developer
             </p>
+
           </div>
           
           <p className="text-lg sm:text-xl text-gray-400 mb-12 max-w-3xl mx-auto animate-fade-in-up delay-200">
@@ -284,12 +285,13 @@ export default function Home() {
             <span className="text-sm text-gray-400 uppercase tracking-wider">About</span>
             <h2 className="text-5xl sm:text-6xl font-bold mt-4 mb-8">Summary</h2>
             <p className="text-xl text-gray-400 leading-relaxed max-w-3xl">
-              I'm a passionate Full Stack Developer with experience in the <span className="text-white font-semibold">MERN stack</span>, <span className="text-white font-semibold">AI/ML</span>, and modern web technologies. 
+              I&apos;m a passionate Full Stack Developer with experience in the <span className="text-white font-semibold">MERN stack</span>, <span className="text-white font-semibold">AI/ML</span>, and modern web technologies. 
               I specialize in building scalable, intelligent applications that solve real-world problems.
             </p>
             <p className="text-xl text-gray-400 leading-relaxed max-w-3xl mt-4">
               My experience spans from developing on-device AI systems at <span className="text-white font-semibold">Samsung Research Institute</span> to creating real-time full-stack web platforms. I focus on building robust, scalable software solutions using technologies like <span className="text-white font-semibold">MERN stack</span>, implementing <span className="text-white font-semibold">RAG systems</span>, and fine-tuning LLMs with <span className="text-white font-semibold">LoRA and QLoRA</span> for production-ready applications.
             </p>
+
           </div>
 
           {/* Education */}
@@ -481,9 +483,10 @@ export default function Home() {
           <span className="text-sm text-gray-400 uppercase tracking-wider">Contact</span>
           <h2 className="text-4xl sm:text-5xl font-bold mt-4 mb-8">Get In Touch</h2>
           <p className="text-xl text-gray-400 mb-16 max-w-2xl mx-auto">
-            I'm currently open to new opportunities and interesting projects. Whether you have a question or just want to say hi, 
+            I&apos;m currently open to new opportunities and interesting projects. Whether you have a question or just want to say hi, 
             feel free to reach out!
           </p>
+
           
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <a href="mailto:akellaanuraag8@gmail.com" className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] transition-all group cursor-pointer relative z-20">
