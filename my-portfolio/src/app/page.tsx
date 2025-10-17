@@ -155,6 +155,7 @@ export default function Home() {
             transform: translateX(0);
           }
         }
+          
 
         .animate-fade-in-up {
           animation: fadeInUp 0.8s ease-out forwards;
@@ -203,6 +204,18 @@ export default function Home() {
       <div className="fixed inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-orange-500/10 animate-gradient"></div>
         <div className="absolute inset-0 grid-background"></div>
+      </div>
+      <div className="absolute inset-0 pointer-events-none z-10">
+        {[...Array(15)].map((_, idx) => (
+          <div
+            key={idx}
+            className="absolute w-px h-full bg-gradient-to-b from-cyan-400/30 to-transparent animate-beam"
+            style={{
+              left: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 3}s`,
+            }}
+          ></div>
+        ))}
       </div>
 
       {/* Navigation */}
